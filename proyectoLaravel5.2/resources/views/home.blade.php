@@ -6,7 +6,7 @@
 
 @section('contenido')
 <div class="jumbotron">
-  <h1>Sistema de administracion de proyectos</h1>
+  <h1>Sistema de administración de proyectos</h1>
   <p>Sistema de administracion de proyectos, permite llevar un control
   adecuado de tu proyecto implementado las mejores practicas de trabajo,
   para obtener proyectos de calidad.</p>
