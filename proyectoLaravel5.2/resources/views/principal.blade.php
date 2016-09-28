@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Gestion de Proyectos</title>
+	<title>Gestión de Proyectos</title>
 	<link rel="stylesheet" href="{{asset("css/bootstrap.css")}}">
   <link rel="stylesheet" href="{{asset("css/estilos.css")}}">
 	<script src="{{asset("js/jquery.js")}}"></script>
