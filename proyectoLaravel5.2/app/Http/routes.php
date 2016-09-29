@@ -31,7 +31,9 @@ Route::get('/actualizarProyecto/{id}', 'proyectoController@actualizarP');
 Route::post('/actualizarProyectos/{id}', 'proyectoController@actualizar');
 Route::get('/generarPDFusuarios', 'usuarioController@generarPDFusuarios');
 Route::get('/generarPDFproyectos', 'proyectoController@generarPDFproyectos');
-Route::get('/asignarUsuarios/{idp}', 'proyectoController@asignarUsuarios');
+Route::get('/asignarUsuarios/{id}', 'proyectoController@asignarUsuarios');
+
+
 
 
 

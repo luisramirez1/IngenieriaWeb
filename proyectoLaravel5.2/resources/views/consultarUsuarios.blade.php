@@ -3,8 +3,8 @@
 @section('encabezado')
 	<h2>
 		Consulta de Usuarios
-		<a href="{{url('/generarPDFusuarios')}}">
-			<span class="glyphicon glyphicon-file libro" aria-hidden="true"></span></a>
+		<a href="{{url('/generarPDFusuarios')}}" id="pdf">
+			<span class="glyphicon glyphicon-file libro" class="pdff" aria-hidden="true"></span></a>
 		</a>
 	</h2>
 @stop

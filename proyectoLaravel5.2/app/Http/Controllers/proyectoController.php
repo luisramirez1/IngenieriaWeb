@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Proyecto;
+use App\Usuario;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -39,7 +40,7 @@ class proyectoController extends Controller
 
     public function actualizarP($id){
     	$proyecto = Proyecto::find($id);
-    	return view("actualizarProyecto", compact('proyecto'));
+    	return view('actualizarProyecto', compact('proyecto'));
     }
 
     public function generarPDFproyectos(){
@@ -51,7 +52,9 @@ class proyectoController extends Controller
     }
 
     public function asignarUsuarios($id){
-        dd($id);
-
+        //dd($id);
+        $proyecto = Proyecto::find($id);
+        $usuarios = Usuario::all();
+        return view('asignarUsuarios', compact('usuarios'), compact('proyecto'));
     }
 }

@@ -1,11 +1,33 @@
+#art1
+{
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+#botonA
+{
+	padding-left: 3%;
+	padding-right: 3%;
+}
+
 #form1
 {
 	margin: 0 auto;
 	width: 50%;
 }
 
+#pdf
+{
+	margin-left: 50%
+}
+
+.table, th
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
 .libro
 {
-	width: 50%;
-
+	display: none;
 }
