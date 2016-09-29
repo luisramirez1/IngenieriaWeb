@@ -1,7 +1,12 @@
 @extends('principal')
 
 @section('encabezado')
-	<h2>Consulta de Proyectos</h2>
+	<h2>
+		Consulta de Proyectos
+		<a href="{{url('/generarPDFproyectos')}}">
+			<span class="glyphicon glyphicon-file libro" aria-hidden="true"></span></a>
+		</a>
+	</h2>
 @stop
 
 @section('contenido')

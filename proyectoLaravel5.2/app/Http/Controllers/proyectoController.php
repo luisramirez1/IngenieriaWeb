@@ -41,4 +41,12 @@ class proyectoController extends Controller
     	$proyecto = Proyecto::find($id);
     	return view("actualizarProyecto", compact('proyecto'));
     }
+
+    public function generarPDFproyectos(){
+        $proyecto=Proyecto::all();
+        $vista=view('pdfProyectos', compact('proyecto'));
+        $dompdf=\App::make('dompdf.wrapper');
+        $dompdf->loadHTML($vista);
+        return $dompdf->stream('ListaProyectos.pdf');
+    }
 }
