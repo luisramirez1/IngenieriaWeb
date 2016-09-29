@@ -49,4 +49,9 @@ class proyectoController extends Controller
         $dompdf->loadHTML($vista);
         return $dompdf->stream('ListaProyectos.pdf');
     }
+
+    public function asignarUsuarios($id){
+        dd($id);
+
+    }
 }

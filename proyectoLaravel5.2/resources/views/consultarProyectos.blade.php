@@ -28,6 +28,7 @@
 					<td>{{$p->f_inicio}}</td>
 					<td>{{$p->f_fin}}</td>
 					<td>
+						<a href="{{url('/asignarUsuarios')}}/{{$p->id}}" class="btn-primary btn-sm"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
 						<a href="{{url('/actualizarProyecto')}}/{{$p->id}}" class="btn-success btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
 						<a href="{{url('/eliminarProyectos')}}/{{$p->id}}" class="btn-danger btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
 					</td>
