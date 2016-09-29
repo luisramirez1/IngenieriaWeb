@@ -44,7 +44,11 @@ class usuarioController extends Controller
     	return view("actualizarUsuarios", compact('usuarios'));
     }
 
-    // public function actualizar($id){
-    // 	Usuario::find($id)
-    // }
+    public function generarPDFusuarios(){
+        $usuarios=Usuario::all();
+        $vista=view('pdfUsuarios', compact('usuarios'));
+        $dompdf=\App::make('dompdf.wrapper');
+        $dompdf->loadHTML($vista);
+        return $dompdf->stream('ListaUsuarios.pdf');
+    }
 }

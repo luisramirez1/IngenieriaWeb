@@ -1,7 +1,12 @@
 @extends('principal')
 
 @section('encabezado')
-	<h2>Consulta de Usuarios</h2>
+	<h2>
+		Consulta de Usuarios
+		<a href="{{url('/generarPDFusuarios')}}">
+			<span class="glyphicon glyphicon-file libro" aria-hidden="true"></span></a>
+		</a>
+	</h2>
 @stop
 
 @section('contenido')
@@ -22,7 +27,13 @@
 					<td>{{$u->id}}</td>
 					<td>{{$u->nombre}}</td>
 					<td>{{$u->edad}}</td>
-					<td>{{$u->sexo}}</td>
+					<td>	
+						@if($u->sexo == 0)
+						Femenino
+						@else
+						Masculino
+						@endif
+					</td>
 					<td>{{$u->correo}}</td>
 					<td>
 						<a href="{{url('/actualizarUsuarios')}}/{{$u->id}}" class="btn-success btn-sm"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
