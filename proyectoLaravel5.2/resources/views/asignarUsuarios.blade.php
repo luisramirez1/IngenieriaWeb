@@ -11,13 +11,17 @@
   			<h3>Proyecto: <span>{{$proyecto->nombre}}</span></h3>
   		</article>
   		<article class="panel-body">
-    		<select name="usuario" class="form-control" required>
-				<option value="">Seleccionar</option>
-				<option value="0">Luis</option>
-				<option value="1">Fernando</option>
+  			 <i class="glyphicon glyphicon-user" id="usuario"></i>
+    		<select name="id_usu" class="form-control">
+    			<option value="">Usuarios</option>
+				@foreach($usuarios as $u)
+					<option value="{{$u->id}}">{{$u->nombre}}</option>
+				@endforeach
 			</select>
 			<article id="art1">
-				<a href="" class="btn-info btn-sm" id="botonA"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+				<button type="submit" class="btn-info" id="botonA">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+				</button>
 			</article>
   		</article>
 	</section>

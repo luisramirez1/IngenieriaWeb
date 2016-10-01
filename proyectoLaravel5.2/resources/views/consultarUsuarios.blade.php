@@ -4,7 +4,7 @@
 	<h2>
 		Consulta de Usuarios
 		<a href="{{url('/generarPDFusuarios')}}" id="pdf">
-			<span class="glyphicon glyphicon-file libro" class="pdff" aria-hidden="true"></span></a>
+			<img src="{{asset("img/pdf.png")}}" alt="" id="pdfimg">
 		</a>
 	</h2>
 @stop

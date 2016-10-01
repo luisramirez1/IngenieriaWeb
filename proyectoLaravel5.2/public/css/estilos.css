@@ -6,6 +6,8 @@
 
 #botonA
 {
+	border: none;
+	border-radius: 5px; 	
 	padding-left: 3%;
 	padding-right: 3%;
 }
@@ -18,7 +20,18 @@
 
 #pdf
 {
-	margin-left: 50%
+	margin-left: 2%;
+}
+
+#pdfimg
+{
+	width: 60px;
+}
+
+#usuario
+{
+	color: #4099FF;
+	margin-left: 8px;
 }
 
 .table, th
@@ -27,7 +40,3 @@
 	text-align: center;
 }
 
-.libro
-{
-	display: none;
-}
