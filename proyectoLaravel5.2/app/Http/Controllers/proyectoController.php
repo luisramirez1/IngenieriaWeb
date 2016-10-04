@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Proyecto;
-use App\Usuario;
+use App\usuarios_proyectos;
+use DB;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -52,9 +53,36 @@ class proyectoController extends Controller
     }
 
     public function asignarUsuarios($id){
+        $usuarios=DB::table('usuario AS u')
+            ->join('usuarios_proyectos AS up', 'u.id', '=', 'up.id_usuario')
+            ->where('up.id_proyecto', '=', $id)
+            ->get();
+       
+        $lista=DB::table('usuarios_proyectos AS up')
+            ->where('up.id_proyecto', '=', $id)
+            ->Lists('up.id_usuario');
+        //utilizar leftjoin
+        $usuariosNo=DB::table('usuario')
+            ->whereNotIn('id', $lista)
+            ->get();
+
+        //dd($usuariosNo);
+        $proyecto=Proyecto::find($id);
+
+        return view('asignarUsuarios', compact('usuarios', 'proyecto','usuariosNo'));
         //dd($id);
-        $proyecto = Proyecto::find($id);
+        /*$proyecto = Proyecto::find($id);
         $usuarios = Usuario::all();
-        return view('asignarUsuarios', compact('usuarios'), compact('proyecto'));
+        return view('asignarUsuarios', compact('usuarios'), compact('proyecto'));*/
+    }
+
+    public function usuarioProyecto($id, Request $datos){
+        $nuevo = new usuarios_proyectos;
+        $nuevo->id_proyecto=$id;
+        $nuevo->id_usuario=$datos->input('user');
+        $nuevo->save();
+
+        return Redirect('/asignarUsuarios/'.$id);
+
     }
 }

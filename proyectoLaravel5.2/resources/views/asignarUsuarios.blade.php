@@ -12,17 +12,22 @@
   		</article>
   		<article class="panel-body">
   			 <i class="glyphicon glyphicon-user" id="usuario"></i>
-    		<select name="id_usu" class="form-control">
-    			<option value="">Usuarios</option>
-				@foreach($usuarios as $u)
-					<option value="{{$u->id}}">{{$u->nombre}}</option>
-				@endforeach
-			</select>
-			<article id="art1">
-				<button type="submit" class="btn-info" id="botonA">
-					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-				</button>
-			</article>
+    		<form method="post" action="{{url('/usuarioProyecto')}}/{{$proyecto->id}}">
+			<input type="hidden" name="_token" value="{{csrf_token()}}">
+    			<article class="form-group">
+		    		<select name="user" class="form-control">
+		    			<option value="">Seleccionar Usuario</option>
+						@foreach($usuariosNo as $up)
+							<option value="{{$up->id}}">{{$up->nombre}}</option>
+						@endforeach
+					</select>
+					<article id="art1">
+						<button type="submit" class="btn-info" id="botonA">
+							<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						</button>
+					</article>
+				</article>
+			</form>
   		</article>
 	</section>
 
