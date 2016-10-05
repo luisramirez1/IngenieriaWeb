@@ -83,6 +83,12 @@ class proyectoController extends Controller
         $nuevo->save();
 
         return Redirect('/asignarUsuarios/'.$id);
+    }
 
+    public function quitarUsuario($id){
+        $registro=usuarios_proyectos::find($id);
+        $id_proyecto=$registro->id_proyecto;
+        $registro->delete();
+        return Redirect('/asignarUsuarios/'.$id_proyecto);
     }
 }

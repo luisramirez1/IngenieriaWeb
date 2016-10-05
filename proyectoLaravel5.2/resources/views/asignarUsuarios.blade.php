@@ -62,7 +62,7 @@
 							</td>
 							<td>{{$u->correo}}</td>
 							<td>
-								<a href="" class="btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+								<a href="{{url('quitarUsuario')}}/{{$u->id}}" class="btn-danger btn-sm"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
 							</td>
 						</tr>
 					@endforeach
