@@ -1,7 +1,12 @@
 @extends('principal')
 
 @section('encabezado')
-	<h2>Asignar Usuarios</h2>
+	<h2>
+		Asignar Usuarios
+		<a href="{{url('/generarPDFAsignarProyectos')}}/{{$proyecto->id}}" id="pdf">
+			<img src="{{asset("img/pdf.png")}}" alt="" id="pdfimg">
+		</a>
+	</h2>
 @stop
 
 @section('contenido')

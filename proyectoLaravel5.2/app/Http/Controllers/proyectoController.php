@@ -91,4 +91,26 @@ class proyectoController extends Controller
         $registro->delete();
         return Redirect('/asignarUsuarios/'.$id_proyecto);
     }
+
+     public function generarPDFAsignarProyectos($id){
+         $usuarios=DB::table('usuario AS u')
+            ->join('usuarios_proyectos AS up', 'u.id', '=', 'up.id_usuario')
+            ->where('up.id_proyecto', '=', $id)
+            ->get();
+       
+        $lista=DB::table('usuarios_proyectos AS up')
+            ->where('up.id_proyecto', '=', $id)
+            ->Lists('up.id_usuario');
+        //utilizar leftjoin
+        $usuariosNo=DB::table('usuario')
+            ->whereNotIn('id', $lista)
+            ->get();
+
+        //dd($usuariosNo);
+        $proyecto=Proyecto::find($id);
+        $vista=view('pdfAsignarProyectos', compact('usuarios', 'proyecto','usuariosNo'));
+        $dompdf=\App::make('dompdf.wrapper');
+        $dompdf->loadHTML($vista);
+        return $dompdf->stream('ListaAsignarProyectos.pdf');
+    }
 }
