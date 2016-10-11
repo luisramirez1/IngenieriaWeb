@@ -10,10 +10,10 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'pokemonController@home');
-Route::get('/inicio', 'pokemonController@inicio');
+Route::get('/', 'principalController@home');
+Route::get('/inicio', 'principalController@inicio');
 Route::get('/registrarPokemon', 'pokemonController@registrarPokemon');
-Route::get('/guardarPokemon', 'pokemonesController@guardar');
+Route::post('/guardarPokemon', 'pokemonController@guardar');
 
 
 

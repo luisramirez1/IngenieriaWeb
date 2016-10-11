@@ -1,7 +1,7 @@
 @extends('principal')
 
 @section('encabezado')
-	<h2>Registro de Pokémon</h2>
+	<h2><b>Registro de Pokémon</b></h2>
 @stop
 
 @section('contenido')
@@ -14,11 +14,11 @@
 			</article>
 			<article class="form-group">
 				<label for="Altura">Altura:</label>
-				<input name="altura" type="number" class="form-control" placeholder="Altura" required>
+				<input name="altura" class="form-control" placeholder="Altura" required onkeypress="return justNumbers(event);">
 			</article>
 			<article class="form-group">
 				<label for="Peso">Peso:</label>
-				<input name="peso" type="number" class="form-control" placeholder="Peso" required>
+				<input name="peso" class="form-control" placeholder="Peso" required onkeypress="return justNumbers(event);">
 			</article>
 			<article class="form-group">
 				<label for="Categoria">Categoria:</label>
