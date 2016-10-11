@@ -1,0 +1,47 @@
+label
+{
+	color: #3c5aa6;
+	font-weight: bold;
+}
+
+#fondo
+{
+	border-radius: 10px;
+	padding-bottom: -60%;
+	margin-left: -60px;
+	margin-top: -47px;
+	width: 1140px;
+	height: 450px;
+}
+
+#form1
+{
+	background-color: #ffcb05;
+	margin: 0 auto;
+	width: 60%;
+}
+
+#go
+{
+	height: 35px;
+}
+
+#logo
+{
+	height: 40px;
+	margin-top: -11px; 
+	margin-left: 10px; 
+	padding-right: 50px;
+}
+
+#poke
+{
+	margin-top: -20px;
+	height: 450px;
+}
+
+#pokeball
+{
+	height: 18px;
+}
+
