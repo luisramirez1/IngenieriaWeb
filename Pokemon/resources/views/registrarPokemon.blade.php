@@ -5,9 +5,13 @@
 @stop
 
 @section('contenido')
-<form action="{{url('/guardarPokemon')}}" method="POST" class="jumbotron" id="form1">
+<form action="{{url('/guardarPokemon')}}" method="POST" class="jumbotron" id="form1" enctype="multipart/form-data">
 	<input type="hidden" name="_token" value="{{csrf_token()}}">
 		<section id="seccion1">
+			<article class="form-group">
+				<label for="NumeroPokemon">Numero de Pokemon:</label>
+				<input name="numeroPokemon" type="number" class="form-control" placeholder="Numero de Pokemon" required min="0">
+			</article>
 			<article class="form-group">
 				<label for="Nombre">Nombre:</label>
 				<input name="nombre" type="text" class="form-control" placeholder="Nombre" required>
@@ -30,10 +34,11 @@
 			</article>
 			<article class="form-group">
 				<label for="Tipo">Tipo:</label>
-				<select name="Tipo" class="form-control" required>
-					<option value="">Tipo</option>
-					<option value="0">Femenino</option>
-					<option value="1">Masculino</option>
+				<select name="tipo" class="form-control" required>
+					<option value="">Tipos</option>
+					@foreach($tipo as $t)
+						<option value="{{$t->id}}">{{$t->nombre}}</option>
+					@endforeach
 				</select>
 			</article>
 			<article class="form-group">
@@ -42,10 +47,10 @@
 			</article>
 			<article class="form-group">
 				<label for="Imagen">Imagen:</label>
-				<input name="imagen" type="file" class="form-control" required>
+				<input name="imagen" type="file" class="form-control" accept="image/*" required>
 			</article>
 			<input type="submit" value="Registrar" class="btn btn-info" id="botonRegistrar">
-			<a href="{{url('inicio')}}" class="btn btn-primary">Cancelar</a>
+			<a href="{{url('/')}}" class="btn btn-primary">Cancelar</a>
 		</section>
 </form>
 @stop	

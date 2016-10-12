@@ -24,8 +24,8 @@
             Pokémon 
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{url('/registrarPokemon')}}">Registrar</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Registrar Tipo</a></li>
+            <!--<li class="divider"></li>
+            <li><a href="#">Registrar Tipo</a></li> -->
           </ul>
         </li>
       </ul>
@@ -36,13 +36,13 @@
             Pokédex 
           </a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Todos</a></li>
+            <li><a href="{{url('/pokedex')}}">Todos</a></li>
             <li class="divider"></li>
             <li><a href="#">Agua</a></li>
             <li><a href="#">Electrico</a></li>
             <li><a href="#">Fuego</a></li>
             <li><a href="#">Hierba</a></li>
-            <li><a href="#">Psiquicos</a></li>
+            <li><a href="#">Psiquico</a></li>
             <li><a href="#">Veneno</a></li>
           </ul>
         </li>
@@ -68,7 +68,7 @@
 	</article>
 </section>
 
-<footer>
+<footer>  
 	<hr>
 	<div class="text-center">Ingeneria Web &copy; 2016</div>
   <div class="text-center">Ramirez Salazar Luis Fernando</div>

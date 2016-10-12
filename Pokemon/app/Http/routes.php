@@ -14,7 +14,8 @@ Route::get('/', 'principalController@home');
 Route::get('/inicio', 'principalController@inicio');
 Route::get('/registrarPokemon', 'pokemonController@registrarPokemon');
 Route::post('/guardarPokemon', 'pokemonController@guardar');
-
+Route::get('/pokedex', 'pokemonController@pokedex');
+Route::get('/pokeInformacion/{id}', 'pokemonController@pokeInformacion');
 
 
 
