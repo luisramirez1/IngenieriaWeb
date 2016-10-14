@@ -8,6 +8,7 @@ use App\TiposPoke;
 use App\Poke_Tipo;
 use App\Http\Requests;
 use Illuminate\Support\Facades\Input;
+use DB;
 
 class pokemonController extends Controller
 {
@@ -41,11 +42,18 @@ class pokemonController extends Controller
 
     public function pokedex(){
         $pokemon = Pokemon::all();
-        return view('pokedex', compact('pokemon'));
+        $tipo = TiposPoke::all();
+        return view('pokedex', compact('pokemon','tipo'));
     }
 
     public function pokeInformacion($id){
         $pokemon = Pokemon::find($id);
-        return view('pokeInformacion', compact('pokemon'));
+        $tipo=DB::table('tipo AS t')
+            ->join('poke_tipo AS pt', 't.id', '=', 'pt.id_tipo')
+            ->where('pt.id_poke', '=', $id)
+            ->select("t.nombre", "t.id")
+            ->get();
+
+        return view('pokeInformacion', compact('pokemon', 'tipo'));
     }
 }

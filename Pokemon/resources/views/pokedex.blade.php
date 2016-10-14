@@ -9,9 +9,13 @@
 	
 		<article class="col-md-3">
 			<div class="list-group">
-				<a class="list-group-item active" id="textoPoke">
-	   				{{$p->nombre}} #{{$p->id}}
-	  			</a>
+			<!--@foreach($tipo as $t)
+				 @if($t->id_tipo ==1 AND $t->id_poke=$p->id)
+	  			@endif 
+				@endforeach-->
+				<a class="list-group-item active">
+		   				{{$p->nombre}} #{{$p->id}}
+		  			</a>
 	  			<a href="{{url('/pokeInformacion')}}/{{$p->id}}" class="list-group-item" id="imagenPoke" onmouseover='this.style.background="#BFBFBF"' onmouseout='this.style.background="#DCDCDC"'>
 	  				<img src="{{asset("img/pokemon/$p->imagen")}}" alt="">
 	  			</a>

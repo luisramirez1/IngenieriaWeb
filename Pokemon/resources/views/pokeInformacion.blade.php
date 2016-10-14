@@ -24,7 +24,9 @@
 					</ul>
 					<div id="myTabContent" class="tab-content">
 					  	<div class="tab-pane fade active in" id="caract">
-					   		 <span>Tipo: </span><br>
+					  		 @foreach($tipo as $t)
+					   		 <span>Tipo: {{$t->nombre}}</span><br>
+					   		 @endforeach
 					   		 <span>Altura: {{$pokemon->altura}} m.</span><br>
 					   		 <span>Peso: {{$pokemon->peso}} kg.</span><br>
 					   		 <span>Categoria: {{$pokemon->categoria}}</span><br>

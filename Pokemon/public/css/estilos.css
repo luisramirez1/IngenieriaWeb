@@ -95,6 +95,11 @@ label
 	font-size: 1.3em;
 }
 
+#tipoAguaPoke
+{
+	background-color: #4592c4;
+}
+
 #tituloPokeInfo
 {
 	margin-top: -20px;
