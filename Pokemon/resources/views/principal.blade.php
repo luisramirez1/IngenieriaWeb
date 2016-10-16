@@ -38,12 +38,12 @@
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{url('/pokedex')}}">Todos</a></li>
             <li class="divider"></li>
-            <li><a href="{{url('/pokedex')}}/1">Agua</a></li>
-            <li><a href="{{url('/pokedex')}}/2">Electrico</a></li>
-            <li><a href="{{url('/pokedex')}}/3">Fuego</a></li>
-            <li><a href="{{url('/pokedex')}}/4">Hierba</a></li>
-            <li><a href="{{url('/pokedex')}}/5">Psiquico</a></li>
-            <li><a href="{{url('/pokedex')}}/6">Veneno</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/1">Agua</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/2">Electrico</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/3">Fuego</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/4">Hierba</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/5">Psiquico</a></li>
+            <li><a href="{{url('/pokedexTipos')}}/6">Veneno</a></li>
           </ul>
         </li>
       </ul>

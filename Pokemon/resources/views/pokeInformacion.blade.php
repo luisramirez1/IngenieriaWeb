@@ -21,6 +21,7 @@
 					<ul class="nav nav-tabs">
 					  	<li class="active"><a href="#caract" data-toggle="tab" aria-expanded="true">Caracteristicas</a></li>
 					  	<li class=""><a href="#evol" data-toggle="tab" aria-expanded="false">Evoluciones</a></li>
+					  	<li class=""><a href="#config" data-toggle="tab" aria-expanded="false">Editar</a></li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 					  	<div class="tab-pane fade active in" id="caract">
@@ -34,6 +35,9 @@
 					 	</div>
 					  	<div class="tab-pane fade" id="evol">
 					   		<p></p>
+					 	</div>
+					 	<div class="tab-pane fade" id="config">
+					   		<a href="{{url('/actualizarPokemon')}}/{{$pokemon->id}}" class="btn-info btn-sm" id="botonEdit"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
 					 	</div>
 					</div>
 				</article>

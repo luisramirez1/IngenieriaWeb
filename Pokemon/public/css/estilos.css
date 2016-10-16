@@ -6,7 +6,7 @@ label
 
 #art3Desc
 {
-	margin-left: 290px;
+	margin-left: 275px;
 	margin-top: -100px;
 
 }
@@ -15,6 +15,12 @@ label
 {
 	margin-left: 10px;
 	font-size: 1.1em;
+}
+
+#config
+{
+	margin-top: 15px;
+	margin-left: 15px;
 }
 
 #imagenPoke
@@ -31,6 +37,13 @@ label
 	background-color: gray;
 	border-radius: 50%;
 	width: 24%;
+}
+
+#imgEditar
+{
+	margin-top: -80px;
+	margin-left: 90%;
+	width: 8%;
 }
 
 #fondo
@@ -95,13 +108,49 @@ label
 	font-size: 1.3em;
 }
 
-#tipoAguaPoke
+#tipoP1
 {
 	background-color: #4592c4;
+	border-color: #4592c4;
+}
+
+#tipoP2
+{
+	background-color: #eed535;
+	border-color: #eed535;
+}
+
+#tipoP3
+{
+	background-color: #fd7d24;
+	border-color: #fd7d24;
+}
+
+#tipoP4
+{
+	background-color: #9bcc50;
+	border-color: #9bcc50;
+}
+
+#tipoP5
+{
+	background-color: #f366b9;
+	border-color: #f366b9;
+}
+
+#tipoP6
+{
+	background-color: #b97fc9;
+	border-color: #b97fc9;
 }
 
 #tituloPokeInfo
 {
 	margin-top: -20px;
 	text-align: center;
+}
+
+#nombrePokeE
+{
+	color: #4592c4;
 }
