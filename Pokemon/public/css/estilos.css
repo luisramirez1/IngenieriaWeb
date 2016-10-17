@@ -7,8 +7,26 @@ label
 #art3Desc
 {
 	margin-left: 275px;
-	margin-top: -100px;
+	margin-top: -168px;
 
+}
+
+#botonEdit
+{
+	background: -webkit-gradient(linear, 90% 0%, 0% 90%, from(#59adea), to(#35ce94));
+	border: none;
+	border-radius: 50px;
+	text-decoration: none;
+	padding: 3px;
+}
+
+#botonPoder
+{
+	background: -webkit-gradient(linear, 90% 0%, 0% 90%, from(#59adea), to(#35ce94));
+	border: none;
+	border-radius: 50px;
+	text-decoration: none;
+	padding: 3px;
 }
 
 #caract
@@ -17,10 +35,52 @@ label
 	font-size: 1.1em;
 }
 
+#candy
+{
+	margin-top: -3px;
+	margin-left: 15px;
+	width: 18px;
+}
+
 #config
 {
 	margin-top: 15px;
 	margin-left: 15px;
+}
+
+#dos
+{
+	margin-left: 7px;
+}
+
+#editar
+{	
+
+	background: lightgray;
+	border-radius: 50px;
+	margin-top: 11px;
+	width: 200px;
+}
+
+#evolucion1
+{
+	margin-left: 93px;
+	width: 17%;
+}
+
+#evolucion2
+{
+	width: 17%;
+}
+
+#evolucion3
+{
+	width: 17%;
+}
+
+#flecha
+{
+	width: 10%;
 }
 
 #imagenPoke
@@ -36,6 +96,7 @@ label
 {
 	background-color: gray;
 	border-radius: 50%;
+	margin-top: -20px;
 	width: 24%;
 }
 
@@ -46,9 +107,19 @@ label
 	width: 8%;
 }
 
+/*#items
+{
+	margin-top: -210px;
+	margin-left: 345px;
+}*/
+
+#itemPsPC
+{
+	
+}
+
 #fondo
 {
-	//border: 5px solid black;
 	border-radius: 10px;
 	padding-bottom: -60%;
 	margin-left: -60px;
@@ -85,6 +156,21 @@ label
 	border-radius: 10px;
 }
 
+#poder
+{
+	border-radius: 50px;
+	width: 220px;
+	background: lightgray;
+	margin-top: 11px;
+}
+
+#polvos
+{
+	margin-left: 5px;
+	margin-top: -2px;
+	width: 18px;
+}
+
 #poke
 {
 	margin-top: -20px;
@@ -96,6 +182,12 @@ label
 	height: 18px;
 }
 
+/*#psPC
+{
+	margin-top: -56px;
+	//margin-left: 300px;
+}*/
+
 #textoDescripcion
 {
 	margin-left: 480px;
@@ -106,6 +198,12 @@ label
 {
 	font-weight: bold;
 	font-size: 1.3em;
+}
+
+#tipoP0
+{
+	background-color: #7b62a3;
+	border-color: #7b62a3;
 }
 
 #tipoP1

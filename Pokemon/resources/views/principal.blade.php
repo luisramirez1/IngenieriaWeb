@@ -24,8 +24,8 @@
             Pokémon 
           <ul class="dropdown-menu" role="menu">
             <li><a href="{{url('/registrarPokemon')}}">Registrar</a></li>
-            <!--<li class="divider"></li>
-            <li><a href="#">Registrar Tipo</a></li> -->
+            <li class="divider"></li>
+            <li><a href="{{url('/registrarEvo')}}">Evoluciones</a></li>
           </ul>
         </li>
       </ul>

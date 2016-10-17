@@ -17,8 +17,12 @@ Route::post('/guardarPokemon', 'pokemonController@guardar');
 Route::post('/actualizarPokemon/{id}', 'pokemonController@actualizarPokemon');
 Route::get('/actualizarPokemon/{id}', 'pokemonController@actualizarPokemonV');
 Route::get('/pokedex', 'pokemonController@pokedex');
+Route::get('/poder/{id}', 'pokemonController@poder');
 Route::get('/pokedexTipos/{id}', 'pokemonController@pokedexTipos');
 Route::get('/pokeInformacion/{id}', 'pokemonController@pokeInformacion');
+Route::get('/registrarEvo', 'pokemonController@registrarEvo');
+Route::post('/guardarEvo', 'pokemonController@guardarEvo');
+
 
 
 

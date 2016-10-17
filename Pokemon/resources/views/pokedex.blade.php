@@ -10,7 +10,7 @@
 		<article class="col-md-3">
 			<div class="list-group">
 				
-				<a class="list-group-item active">
+				<a class="list-group-item active" id="tipoP0">
 		   				{{$p->nombre}} #{{$p->id}}
 		  		</a>
 	  			<a href="{{url('/pokeInformacion')}}/{{$p->id}}" class="list-group-item" id="imagenPoke" onmouseover='this.style.background="#BFBFBF"' onmouseout='this.style.background="#DCDCDC"'>
