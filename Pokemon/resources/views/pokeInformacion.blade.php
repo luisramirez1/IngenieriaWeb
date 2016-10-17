@@ -62,7 +62,11 @@
 					   		<article id="poder">
 					   			<a href="{{url('/poder')}}/{{$pokemon->id}}" class="btn-info btn-xs" id="botonPoder"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Poder</a>
 								<img id="polvos" src="{{asset("img/polvo.png")}}">100
-								<img id="candy" src="{{asset("img/candy.png")}}"><span id="dos">2</span>	
+								<img id="candy" src="{{asset("img/candy.png")}}"><span id="dos">2</span>
+					   		</article>
+					   		<article id="editar">
+					   			<a href="{{url('/generarPDFPokemon')}}/{{$pokemon->id}}" class="btn-info btn-xs" id="botonPoder"><span class="glyphicon glyphicon-cloud-download" aria-hidden="true"></span> PDF </a>
+					   			<span>{{$pokemon->nombre}}.pdf</span>
 					   		</article>
 					 	</div>
 					</div>

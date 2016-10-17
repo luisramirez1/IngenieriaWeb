@@ -22,7 +22,7 @@
 			</article>
 			<article class="form-group">
 				<label for="Imagen">Imagen3:</label>
-				<input name="imagen3" type="file" class="form-control" accept="image/*" required>
+				<input name="imagen3" type="file" class="form-control" accept="image/*">
 			</article>
 			<input type="submit" value="Registrar" class="btn btn-info" id="botonRegistrar">
 			<a href="{{url('/')}}" class="btn btn-primary">Cancelar</a>

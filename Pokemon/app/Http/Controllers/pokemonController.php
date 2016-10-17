@@ -137,5 +137,11 @@ class pokemonController extends Controller
         return Redirect('/pokeInformacion/'.$id_pokemon);
     }
 
-
+    public function generarPDFPokemon($id){
+        $pokemon=Pokemon::find($id);
+        $vista=view('generarPDFPokemon', compact('pokemon'));
+        $dompdf=\App::make('dompdf.wrapper');
+        $dompdf->loadHTML($vista);
+        return $dompdf->stream('pokemon.pdf');
+    }
 }

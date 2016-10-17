@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-10-2016 a las 08:28:45
--- Versión del servidor: 10.1.16-MariaDB
--- Versión de PHP: 5.6.24
+-- Tiempo de generación: 18-10-2016 a las 00:43:03
+-- Versión del servidor: 10.1.13-MariaDB
+-- Versión de PHP: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -76,7 +76,40 @@ INSERT INTO `evoluciones` (`id`, `evolucion1`, `evolucion2`, `evolucion3`, `crea
 (5, '004.png', '005.png', '006.png', '2016-10-17 12:23:57', '2016-10-17 12:23:57'),
 (6, '004.png', '005.png', '006.png', '2016-10-17 12:24:08', '2016-10-17 12:24:08'),
 (8, '007.png', '008.png', '009.png', '2016-10-17 12:24:24', '2016-10-17 12:24:24'),
-(9, '007.png', '008.png', '009.png', '2016-10-17 12:24:41', '2016-10-17 12:24:41');
+(9, '007.png', '008.png', '009.png', '2016-10-17 12:24:41', '2016-10-17 12:24:41'),
+(24, '023.png', '024.png', '008.png', '2016-10-17 21:43:00', '2016-10-17 21:43:00'),
+(26, '025.png', '026.png', '034.png', '2016-10-17 21:44:41', '2016-10-17 21:44:41'),
+(24, '023.png', '024.png', NULL, '2016-10-17 15:49:52', '0000-00-00 00:00:00'),
+(26, '025.png', '026.png', NULL, '2016-10-17 15:49:52', '0000-00-00 00:00:00'),
+(30, '029.png', '030.png', '031.png', '2016-10-17 15:51:01', '0000-00-00 00:00:00'),
+(31, '029.pg', '030.png', '031.png', '2016-10-17 15:51:01', '0000-00-00 00:00:00'),
+(33, '032.png', '033.png', '034.png', '2016-10-17 15:52:07', '0000-00-00 00:00:00'),
+(34, '032.png', '033.png', '034.png', '2016-10-17 15:52:07', '0000-00-00 00:00:00'),
+(55, '054.png', '055.png', NULL, '2016-10-17 15:53:03', '0000-00-00 00:00:00'),
+(59, '058.png', '059.png', NULL, '2016-10-17 15:53:03', '0000-00-00 00:00:00'),
+(61, '060.png', '061.png', '062.png', '2016-10-17 15:53:53', '0000-00-00 00:00:00'),
+(62, '060.png', '061.png', '062.png', '2016-10-17 15:53:53', '0000-00-00 00:00:00'),
+(64, '063.png', '064.png', '065.png', '2016-10-17 15:54:54', '0000-00-00 00:00:00'),
+(65, '063.png', '064.png', '065.png', '2016-10-17 15:54:54', '0000-00-00 00:00:00'),
+(73, '072.png', '073.png', NULL, '2016-10-17 15:55:47', '0000-00-00 00:00:00'),
+(78, '077.png', '077.png', NULL, '2016-10-17 15:55:47', '0000-00-00 00:00:00'),
+(80, '079.png', '080.png', NULL, '2016-10-17 16:04:05', '0000-00-00 00:00:00'),
+(82, '081.png', '082.png', NULL, '2016-10-17 16:04:05', '0000-00-00 00:00:00'),
+(97, '096.png', '097.png', NULL, '2016-10-17 16:29:02', '0000-00-00 00:00:00'),
+(101, '100.png', '101.png', NULL, '2016-10-17 16:29:02', '0000-00-00 00:00:00'),
+(125, '239.png', '125.png', '446.png', '2016-10-17 16:36:07', '0000-00-00 00:00:00'),
+(446, '239.png', '125.png', '446.png', '2016-10-17 16:36:07', '0000-00-00 00:00:00'),
+(126, '240.png', '126.png', '467.png', '2016-10-17 16:37:14', '0000-00-00 00:00:00'),
+(467, '240.png', '126.png', '467.png', '2016-10-17 16:37:14', '0000-00-00 00:00:00'),
+(153, '152.png', '153.png', '154.png', '2016-10-17 16:38:12', '0000-00-00 00:00:00'),
+(154, '152.png', '153.png', '154.png', '2016-10-17 16:38:12', '0000-00-00 00:00:00'),
+(156, '155.png', '156.png', '157.png', '2016-10-17 16:38:46', '0000-00-00 00:00:00'),
+(157, '155.png', '156.png', '157.png', '2016-10-17 16:38:46', '0000-00-00 00:00:00'),
+(180, '179.png', '180.png', '181.png', '2016-10-17 16:39:40', '0000-00-00 00:00:00'),
+(181, '179.png', '180.png', '181.png', '2016-10-17 16:39:40', '0000-00-00 00:00:00'),
+(192, '191.png', '192.png', NULL, '2016-10-17 16:41:01', '0000-00-00 00:00:00'),
+(202, '360.png', '202.png', NULL, '2016-10-17 16:41:01', '0000-00-00 00:00:00'),
+(317, '316.png', '317.png', NULL, '2016-10-17 16:41:23', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -97,7 +130,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `caramelos`, `polvos`, `current_at`, `updated_at`) VALUES
-(1, 994, 9700, '2016-10-17 05:46:35', '2016-10-17 11:46:35');
+(1, 984, 9200, '2016-10-17 17:18:00', '2016-10-17 23:18:00');
 
 -- --------------------------------------------------------
 
@@ -125,7 +158,7 @@ CREATE TABLE `pokemon` (
 --
 
 INSERT INTO `pokemon` (`id`, `nombre`, `altura`, `peso`, `categoria`, `habilidad`, `descripcion`, `imagen`, `ps`, `pc`, `created_at`, `updated_at`) VALUES
-(1, 'Bulbasaur', 0.7, 6.9, 'Semilla', 'Espesura', 'A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada vez más a medida que absorbe los rayos del sol.', '001.png', 0, 0, '2016-10-17 09:18:13', '2016-10-17 09:18:13'),
+(1, 'Bulbasaur', 0.7, 6.9, 'Semilla', 'Espesura', 'A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada vez más a medida que absorbe los rayos del sol.', '001.png', 40, 160, '2016-10-17 17:18:00', '2016-10-17 23:18:00'),
 (2, 'Ivysaur', 1, 13, 'Semilla', 'Espesura', 'Este Pokémon lleva un bulbo en el lomo y, para poder con su peso, tiene unas patas y un tronco gruesos y fuertes. Si empieza a pasar más tiempo al sol, será porque el bulbo está a punto de hacerse una flor grande.', '002.png', 0, 0, '2016-10-17 09:18:51', '2016-10-17 09:18:51'),
 (3, 'Venasaur', 2, 100, 'Semilla', 'Espesura', 'Venusaur tiene una flor enorme en el lomo que, según parece, adquiere unos colores muy vivos si está bien nutrido y le da mucho el sol. El aroma delicado de la flor tiene un efecto relajante en el ánimo de las personas.', '003.png', 0, 0, '2016-10-17 09:19:40', '2016-10-17 09:19:40'),
 (4, 'Charmander', 0.6, 8.5, 'Lagartija', 'Llamas', 'La llama que tiene en la punta de la cola arde según sus sentimientos. Llamea levemente cuando está alegre y arde vigorosamente cuando está enfadado.', '004.png', 0, 0, '2016-10-17 08:21:50', '2016-10-17 08:21:50'),
@@ -160,7 +193,7 @@ INSERT INTO `pokemon` (`id`, `nombre`, `altura`, `peso`, `categoria`, `habilidad
 (78, 'Rapidash', 1.7, 95, 'Caballo', 'Fuga, Absorbe fuego', 'A Rapidash se le suele ver trotando sin rumbo fijo por los campos y llanos. Cuando tiene que ir a algún sitio en concreto, se le aviva el fuego de las melenas y emprende el galope llameante llegando a los 240 km/h.', '078.png', 0, 0, '2016-10-17 08:28:53', '2016-10-17 08:28:53'),
 (79, 'Slowpoke', 1.2, 36, 'Atontado', 'Despiste, Ritmo propio', 'Slowpoke usa la cola para atrapar a sus presas metiéndola bajo el agua en las riberas de los ríos. Con todo, es olvidadizo, se le puede pasar lo que estaba haciendo y quedarse días enteros holgazaneando en la orilla.', '079.png', 0, 0, '2016-10-17 07:41:12', '2016-10-17 07:41:12'),
 (80, 'Slowbro', 1.6, 78.5, 'Ermitaño', 'Despiste, Ritmo propio', 'Slowbro lleva en la cola un Shellder enganchado, sujeto por los dientes. Como Slowbro no puede usar la cola para pescar, se mete en el agua de mala gana en busca de sus presas.', '080.png', 0, 0, '2016-10-17 07:43:09', '2016-10-17 07:43:09'),
-(81, 'Magnemite', 0.3, 6, 'Iman', 'Robustez, Iman', 'Magnemite se engancha a las líneas de tensión para nutrirse de electricidad. Cuando se producen apagones en las casas, es aconsejable revisar el automático y comprobar que no hay Pokémon de este tipo colgados de la caja de fusibles.', '081.png', 0, 0, '2016-10-17 07:47:14', '2016-10-17 07:47:14'),
+(81, 'Magnemite', 0.3, 6, 'Iman', 'Robustez, Iman', 'Magnemite se engancha a las líneas de tensión para nutrirse de electricidad. Cuando se producen apagones en las casas, es aconsejable revisar el automático y comprobar que no hay Pokémon de este tipo colgados de la caja de fusibles.', '081.png', 10, 40, '2016-10-17 16:41:45', '2016-10-17 22:41:45'),
 (82, 'Magneton', 1, 60, 'Iman', 'Robustez, Iman', 'Magneton emite una fuerte energía magnética que causa estragos en los instrumentos mecánicos. Por ello, en las ciudades se avisa con sirenas cuando hay concentraciones de estos Pokémon.', '082.png', 0, 0, '2016-10-17 07:48:15', '2016-10-17 07:48:15'),
 (96, 'Drowzee', 1, 32.4, 'Hipnosis', 'Insomnio, Alerta', 'Si a alguien le pica la nariz mientras duerme, seguro que es porque tiene a uno de estos Pokémon cerca de la almohada intentando sacarle los sueños por la nariz para comérselos.', '096.png', 0, 0, '2016-10-17 09:27:16', '2016-10-17 09:27:16'),
 (97, 'Hypno', 1.6, 75.6, 'Hipnosis', 'Insomnio, Alerta', 'Hypno lleva un péndulo en la mano. El balanceo y el brillo que tiene sumen al rival en un estado de hipnosis profundo. Mientras busca a su presa, saca brillo al péndulo.', '097.png', 0, 0, '2016-10-17 09:27:43', '2016-10-17 09:27:43'),

@@ -22,6 +22,7 @@ Route::get('/pokedexTipos/{id}', 'pokemonController@pokedexTipos');
 Route::get('/pokeInformacion/{id}', 'pokemonController@pokeInformacion');
 Route::get('/registrarEvo', 'pokemonController@registrarEvo');
 Route::post('/guardarEvo', 'pokemonController@guardarEvo');
+Route::get('/generarPDFPokemon/{id}', 'pokemonController@generarPDFPokemon');
 
 
 
