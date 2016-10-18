@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <link rel="icon" type="image/png" sizes="32x32" href="{{asset("img/favicon.png")}}" />
 	<meta charset="UTF-8">
 	<title>Pokémon</title>
 	<link rel="stylesheet" href="{{asset("css/bootstrap.css")}}">
@@ -8,7 +9,7 @@
 	<script src="{{asset("js/jquery.js")}}"></script>
 	<script src="{{asset("js/bootstrap.js")}}"></script>
 </head>
-<body>
+<body background="{{asset("fondoo.jpg")}}">
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">

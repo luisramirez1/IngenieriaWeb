@@ -139,7 +139,14 @@ class pokemonController extends Controller
 
     public function generarPDFPokemon($id){
         $pokemon=Pokemon::find($id);
-        $vista=view('generarPDFPokemon', compact('pokemon'));
+        $evoluciones = Evoluciones::find($id);
+        $item = Items::find(1);
+        $tipo=DB::table('tipo AS t')
+            ->join('poke_tipo AS pt', 't.id', '=', 'pt.id_tipo')
+            ->where('pt.id', '=', $id)
+            ->select("t.nombre", "t.id")
+            ->get();
+        $vista=view('generarPDFPokemon', compact('pokemon','evoluciones','item','tipo'));
         $dompdf=\App::make('dompdf.wrapper');
         $dompdf->loadHTML($vista);
         return $dompdf->stream('pokemon.pdf');
