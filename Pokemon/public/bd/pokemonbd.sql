@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-10-2016 a las 00:43:03
--- Versión del servidor: 10.1.13-MariaDB
--- Versión de PHP: 5.6.23
+-- Tiempo de generación: 19-10-2016 a las 18:57:55
+-- Versión del servidor: 10.1.16-MariaDB
+-- Versión de PHP: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -48,7 +48,6 @@ INSERT INTO `evoluciones` (`id`, `evolucion1`, `evolucion2`, `evolucion3`, `crea
 (25, '025.png', '026.png', NULL, '2016-10-17 05:00:49', '0000-00-00 00:00:00'),
 (81, '081.png', '082.png', NULL, '2016-10-17 05:01:00', '0000-00-00 00:00:00'),
 (100, '100.png', '101.png', NULL, '2016-10-17 05:01:11', '0000-00-00 00:00:00'),
-(239, '239.png', '125.png', '446.png', '2016-10-17 05:01:39', '0000-00-00 00:00:00'),
 (179, '179.png', '180.png', '181.png', '2016-10-17 05:02:02', '0000-00-00 00:00:00'),
 (4, '004.png', '005.png', '006.png', '2016-10-17 05:02:25', '0000-00-00 00:00:00'),
 (58, '058.png', '059.png', NULL, '2016-10-17 05:02:41', '0000-00-00 00:00:00'),
@@ -97,8 +96,6 @@ INSERT INTO `evoluciones` (`id`, `evolucion1`, `evolucion2`, `evolucion3`, `crea
 (82, '081.png', '082.png', NULL, '2016-10-17 16:04:05', '0000-00-00 00:00:00'),
 (97, '096.png', '097.png', NULL, '2016-10-17 16:29:02', '0000-00-00 00:00:00'),
 (101, '100.png', '101.png', NULL, '2016-10-17 16:29:02', '0000-00-00 00:00:00'),
-(125, '239.png', '125.png', '446.png', '2016-10-17 16:36:07', '0000-00-00 00:00:00'),
-(446, '239.png', '125.png', '446.png', '2016-10-17 16:36:07', '0000-00-00 00:00:00'),
 (126, '240.png', '126.png', '467.png', '2016-10-17 16:37:14', '0000-00-00 00:00:00'),
 (467, '240.png', '126.png', '467.png', '2016-10-17 16:37:14', '0000-00-00 00:00:00'),
 (153, '152.png', '153.png', '154.png', '2016-10-17 16:38:12', '0000-00-00 00:00:00'),
@@ -109,7 +106,10 @@ INSERT INTO `evoluciones` (`id`, `evolucion1`, `evolucion2`, `evolucion3`, `crea
 (181, '179.png', '180.png', '181.png', '2016-10-17 16:39:40', '0000-00-00 00:00:00'),
 (192, '191.png', '192.png', NULL, '2016-10-17 16:41:01', '0000-00-00 00:00:00'),
 (202, '360.png', '202.png', NULL, '2016-10-17 16:41:01', '0000-00-00 00:00:00'),
-(317, '316.png', '317.png', NULL, '2016-10-17 16:41:23', '0000-00-00 00:00:00');
+(317, '316.png', '317.png', NULL, '2016-10-17 16:41:23', '0000-00-00 00:00:00'),
+(466, '239.png', '125.png', '466.png', '2016-10-19 22:33:21', '2016-10-19 22:33:21'),
+(239, '239.png', '125.png', '466.png', '2016-10-19 16:39:55', '0000-00-00 00:00:00'),
+(125, '239.png', '125.png', '466.png', '2016-10-19 16:39:55', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -130,7 +130,7 @@ CREATE TABLE `items` (
 --
 
 INSERT INTO `items` (`id`, `caramelos`, `polvos`, `current_at`, `updated_at`) VALUES
-(1, 984, 9200, '2016-10-17 17:18:00', '2016-10-17 23:18:00');
+(1, 972, 8600, '2016-10-19 16:52:41', '2016-10-19 22:52:41');
 
 -- --------------------------------------------------------
 
@@ -161,7 +161,7 @@ INSERT INTO `pokemon` (`id`, `nombre`, `altura`, `peso`, `categoria`, `habilidad
 (1, 'Bulbasaur', 0.7, 6.9, 'Semilla', 'Espesura', 'A Bulbasaur es fácil verle echándose una siesta al sol. La semilla que tiene en el lomo va creciendo cada vez más a medida que absorbe los rayos del sol.', '001.png', 40, 160, '2016-10-17 17:18:00', '2016-10-17 23:18:00'),
 (2, 'Ivysaur', 1, 13, 'Semilla', 'Espesura', 'Este Pokémon lleva un bulbo en el lomo y, para poder con su peso, tiene unas patas y un tronco gruesos y fuertes. Si empieza a pasar más tiempo al sol, será porque el bulbo está a punto de hacerse una flor grande.', '002.png', 0, 0, '2016-10-17 09:18:51', '2016-10-17 09:18:51'),
 (3, 'Venasaur', 2, 100, 'Semilla', 'Espesura', 'Venusaur tiene una flor enorme en el lomo que, según parece, adquiere unos colores muy vivos si está bien nutrido y le da mucho el sol. El aroma delicado de la flor tiene un efecto relajante en el ánimo de las personas.', '003.png', 0, 0, '2016-10-17 09:19:40', '2016-10-17 09:19:40'),
-(4, 'Charmander', 0.6, 8.5, 'Lagartija', 'Llamas', 'La llama que tiene en la punta de la cola arde según sus sentimientos. Llamea levemente cuando está alegre y arde vigorosamente cuando está enfadado.', '004.png', 0, 0, '2016-10-17 08:21:50', '2016-10-17 08:21:50'),
+(4, 'Charmander', 0.6, 8.5, 'Lagartija', 'Llamas', 'La llama que tiene en la punta de la cola arde según sus sentimientos. Llamea levemente cuando está alegre y arde vigorosamente cuando está enfadado.', '004.png', 30, 120, '2016-10-18 17:36:12', '2016-10-18 23:36:12'),
 (5, 'Charmeleon', 1.1, 19, 'Llama', 'Llamas', 'Charmeleon no tiene reparo en acabar con su rival usando las afiladas garras que tiene. Si su enemigo es fuerte, se vuelve agresivo, y la llama que tiene en el extremo de la cola empieza a arder con mayor intensidad tornándose azulada.', '005.png', 0, 0, '2016-10-17 08:23:37', '2016-10-17 08:23:37'),
 (6, 'Charizard', 1.7, 90.5, 'Llama', 'Llamas', 'Charizard se dedica a volar por los cielos en busca de oponentes fuertes. Echa fuego por la boca y es capaz de derretir cualquier cosa. No obstante, si su rival es más débil que él, no usará este ataque.', '006.png', 0, 0, '2016-10-17 08:25:43', '2016-10-17 08:25:43'),
 (7, 'Squirtle', 0.5, 9, 'Pequeña Tortuga', 'Torrente', 'El caparazón de Squirtle no se utiliza simplemente para la protección. forma redondeada de la cáscara y las ranuras en su superficie ayudan a minimizar la resistencia en el agua, lo que permite este Pokémon a nadar a altas velocidades.', '007.png', 0, 0, '2016-10-17 07:28:00', '2016-10-17 07:28:00'),
@@ -169,7 +169,7 @@ INSERT INTO `pokemon` (`id`, `nombre`, `altura`, `peso`, `categoria`, `habilidad
 (9, 'blastoise', 1.6, 85.5, 'Marisco', 'Torrente', 'Blastoise lanza chorros de agua con gran precisión por los tubos que le salen del caparazón que tiene en la espalda. Puede disparar chorros de agua con tanta puntería que no fallaría al tirar contra una lata pequeña a 50 m.', '009.png', 0, 0, '2016-10-17 07:31:02', '2016-10-17 07:31:02'),
 (23, 'Ekans', 2, 6.9, 'Serpiente', 'Mudar, Intimidacion', 'Ekans se enrosca para descansar. Adoptando esta posición puede responder rápidamente a cualquier amenaza que le aceche desde cualquier lugar, levantando la cabeza con una feroz mirada.', '023.png', 0, 0, '2016-10-17 09:31:16', '2016-10-17 09:31:16'),
 (24, 'Arbok', 3.5, 65, 'Cobra', 'Mudar, Intimidacion', 'Este Pokémon es tremendamente fuerte, puede oprimir cualquier cosa con su cuerpo y hasta es capaz de estrujar un barril de acero. Una vez que Arbok se enrosca a su víctima, no hay forma de escapar de su asfixiante abrazo.', '024.png', 0, 0, '2016-10-17 09:32:00', '2016-10-17 09:32:00'),
-(25, 'Pikachu', 0.4, 6, 'Raton', 'Estatica', 'Cada vez que un Pikachu se encuentra con algo nuevo, le lanza una descarga eléctrica. Cuando se ve alguna baya chamuscada, es muy probable que sea obra de un Pikachu, ya que a veces no controlan la intensidad de la descarga.', '025.png', 30, 120, '2016-10-17 05:46:36', '2016-10-17 11:46:36'),
+(25, 'Pikachu', 0.4, 6, 'Raton', 'Estatica', 'Cada vez que un Pikachu se encuentra con algo nuevo, le lanza una descarga eléctrica. Cuando se ve alguna baya chamuscada, es muy probable que sea obra de un Pikachu, ya que a veces no controlan la intensidad de la descarga.', '025.png', 40, 160, '2016-10-19 16:52:41', '2016-10-19 22:52:41'),
 (26, 'Raichu', 0.8, 30, 'Raton', 'Estatica', 'Si las bolsas de los mofletes se le cargan demasiado, Raichu planta la cola en el suelo para liberar electricidad. Es común encontrar zonas chamuscadas cerca de la madriguera de este Pokémon.', '026.png', 0, 0, '2016-10-17 07:46:29', '2016-10-17 07:46:29'),
 (29, 'Nidoran ', 0.4, 7, 'Pin Veneno', 'Punto toxico, Rivalidad', 'Nidoran tiene púas que segregan un veneno muy potente. Se piensa que las desarrolló como protección del cuerpo tan pequeño que tiene. Cuando se enfada, libera una horrible sustancia tóxica por el cuerno.', '029.png', 0, 0, '2016-10-17 09:32:53', '2016-10-17 09:32:53'),
 (30, 'Nidorina', 0.8, 20, 'Pin Veneno', 'Punto toxico, Rivalidad', 'Cuando están en familia o con sus amigos, esconden las púas para evitar accidentes. Según parece, se alteran bastante si se separan del grupo.', '030.png', 0, 0, '2016-10-17 09:33:24', '2016-10-17 09:33:24'),
@@ -219,12 +219,12 @@ INSERT INTO `pokemon` (`id`, `nombre`, `altura`, `peso`, `categoria`, `habilidad
 (196, 'Espeon', 0.9, 26.5, 'Sol', 'Sincronia', 'Espeon es tremendamente leal al Entrenador al que considera digno de ello. Dicen que este Pokémon desarrolló sus poderes adivinatorios para evitar que su Entrenador sufra daño alguno.', '196.png', 0, 0, '2016-10-17 09:29:21', '2016-10-17 09:29:21'),
 (202, 'Wobbuffet', 1.3, 28.5, 'Paciente', 'Sombra trampa', 'Si dos o más Wobbuffet se encuentran, se volverán competitivos e intentarán superarse en resistencia. Pero también puede que intenten aguantar sin comer; algo que los Entrenadores deben tener muy en cuenta.', '202.png', 0, 0, '2016-10-17 09:29:55', '2016-10-17 09:29:55'),
 (239, 'Elekid', 0.6, 23.5, 'Electrico', 'Estatica', 'Elekid acumula electricidad. Si entra en contacto con algo de metal y descarga accidentalmente toda la electricidad almacenada, empieza a agitar los brazos en círculo para volver a cargarse.', '239.png', 0, 0, '2016-10-17 07:55:37', '2016-10-17 07:55:37'),
-(240, 'Magby', 0.7, 21.4, 'Ascuas', 'Cuerpo en llama', 'El estado de salud de Magby se puede determinar observando el fuego que emana al respirar. Si las llamas que echa por la boca son amarillas, está bien. Pero, si además de las llamas sale humo negro, está cansado.', '240.png', 0, 0, '2016-10-17 08:33:19', '2016-10-17 08:33:19'),
+(240, 'Magby', 0.7, 21.4, 'Ascuas', 'Cuerpo en llama', 'El estado de salud de Magby se puede determinar observando el fuego que emana al respirar. Si las llamas que echa por la boca son amarillas, está bien. Pero, si además de las llamas sale humo negro, está cansado.', '240.png', 20, 80, '2016-10-19 16:23:32', '2016-10-19 22:23:32'),
 (316, 'Gulpin', 0.4, 10.3, 'Estomago', 'Lodo liquido, Viscosidad', 'Casi la totalidad del cuerpo de Gulpin está compuesto por el estómago. Por eso, puede tragarse todo lo que tenga su tamaño. En el interior del estómago tiene un fluido capaz de corroerlo todo.', '316.png', 0, 0, '2016-10-17 09:36:29', '2016-10-17 09:36:29'),
 (317, 'Swalot', 1.7, 80, 'Bolsa Veneno', 'Lodo liquido, Viscosidad', 'Cuando Swalot detecta una presa, echa por los poros, y a borbotones, un fluido tóxico espantoso con el que rocía a su víctima. Una vez que la debilita, se la traga entera gracias a la gigantesca boca que tiene.', '317.png', 0, 0, '2016-10-17 09:37:18', '2016-10-17 09:37:18'),
 (336, 'Seviper', 2.7, 52.5, 'Colmillos', 'Mudar', 'Seviper lleva años de gran enemistad con Zangoose. Las cicatrices que tiene por todo el cuerpo dan buena muestra de los encarnizados combates en los que se han enfrentado. Seviper ataca usando su cola con forma de espada.', '336.png', 0, 0, '2016-10-17 09:37:43', '2016-10-17 09:37:43'),
 (360, 'Wynaut', 0.6, 14, 'Radiante', 'Sombra trampa', 'Wynaut está siempre con una gran sonrisa puesta. Para ver si está enfadado, basta con mirarle la cola. Cuando se le molesta, se pone a dar golpetazos en el suelo.', '360.png', 0, 0, '2016-10-17 09:30:24', '2016-10-17 09:30:24'),
-(466, 'Electivire', 1.8, 138.6, 'Rayo', 'Electromotor', 'Al almacenar mucha electricidad, desprende chispas de una claridad increíble entre sus dos cuernos.', '446.png', 0, 0, '2016-10-17 07:56:44', '2016-10-17 07:56:44'),
+(466, 'Electivire', 1.8, 138.6, 'Rayo', 'Electromotor', 'Al almacenar mucha electricidad, desprende chispas de una claridad increíble entre sus dos cuernos.', '466.png', 0, 0, '2016-10-19 16:27:33', '2016-10-17 07:56:44'),
 (467, 'Magmortar', 1.6, 68, 'Explosion', 'Cuerpo en llama', 'Sus brazos disparan bolas de fuego de más de 2000 °C. Vive en cráteres volcánicos.', '467.png', 0, 0, '2016-10-17 08:35:42', '2016-10-17 08:35:42');
 
 -- --------------------------------------------------------
